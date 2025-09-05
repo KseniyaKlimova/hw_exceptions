@@ -55,9 +55,7 @@ public class ShopRepositoryTest {
     @Test
     public void shouldExceptionAddProduct() {
 
-        Assertions.assertThrows(AlreadyExistsException.class, () -> {
-            repo.add(product3);
-        });
+        Assertions.assertThrows(AlreadyExistsException.class, () -> repo.add(product3));
     }
 }
 
